@@ -21,9 +21,13 @@ We use multiple publicly available datasets for drug interaction analysis and ri
 
 Dataset	Source	Accessibility
 DailyMed (SPL Data)	DailyMed	✅ Publicly Available (No Restrictions)
+
 SIDER (Side Effects Data)	SIDER Database	✅ Publicly Available (No Restrictions)
+
 MIMIC-III (Kaggle Version)	Kaggle	✅ Publicly Available (No Restrictions)
+
 User-Reported Health Data	Collected via user input	✅ No Restrictions
+
 ⚠ Note: The MIMIC-III dataset was obtained from Kaggle instead of PhysioNet, meaning it does not require special access or approval.
 
 ### 📌 Project Workflow
