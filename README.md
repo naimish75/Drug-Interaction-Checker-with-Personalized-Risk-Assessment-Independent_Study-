@@ -5,6 +5,7 @@ The Enhanced Drug Interaction Checker is an AI-powered tool designed to analyze 
 
 ### 🔹 Key Features
 ✅ Extracts drug data from DailyMed (SPL XML files).
+
 ✅ Converts XML files to JSON for structured analysis.
 
 ✅ Performs drug interaction analysis using advanced ML models.
@@ -30,22 +31,26 @@ User-Reported Health Data	Collected via user input	✅ No Restrictions
 Script: XML_Extract.py
 Function: Extracts XML files from compressed DailyMed archives.
 Output: XML files saved in the extracted_xmls directory.
+
 2️⃣ Converting XML to JSON
 Script: XML-Json.py
 Function: Converts SPL XML files into structured JSON format.
 Output: A JSON file containing drug interactions, warnings, and dosage information.
+
 3️⃣ Drug Interaction Analysis
 Script: Drug-Interaction.py
 Function:
 Identifies drug-drug interactions based on active ingredients.
 Uses Facebook’s BART model to generate natural language summaries of risks.
 Flags potential adverse reactions based on predefined interaction rules.
+
 4️⃣ User-Specific Risk Assessment
 Script: Personalized-Risk.py
 Function:
 Accepts user input for pre-existing conditions (e.g., hypertension, diabetes).
 Classifies interaction severity based on reported health conditions.
 Uses ML models trained on MIMIC-III data to refine predictions dynamically.
+
 Example Input:
 
 json
@@ -65,9 +70,12 @@ Edit
   "risk_level": "High",
   "summary": "Ibuprofen may reduce the effectiveness of Lisinopril and increase the risk of kidney damage in patients with hypertension."
 }
+
 ### 📌 Why JSON Instead of XML?
 ✅ Efficiency → JSON files allow faster access and processing in ML pipelines.
+
 ✅ Scalability → Structured JSON enables integration with external APIs.
+
 ✅ Better NLP Processing → JSON simplifies text-based interaction summarization.
 
 ### 📌 How to Use the System
