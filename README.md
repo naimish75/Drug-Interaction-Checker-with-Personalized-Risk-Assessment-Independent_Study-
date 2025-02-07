@@ -20,35 +20,35 @@ The Enhanced Drug Interaction Checker is an AI-powered tool designed to analyze 
 We use multiple publicly available datasets for drug interaction analysis and risk assessment.
 
 Dataset	Source	Accessibility
-DailyMed (SPL Data)	DailyMed	✅ Publicly Available (No Restrictions)
 
-SIDER (Side Effects Data)	SIDER Database	✅ Publicly Available (No Restrictions)
+**'DailyMed (SPL Data)	DailyMed'**	✅ Publicly Available (No Restrictions)
 
-MIMIC-III (Kaggle Version)	Kaggle	✅ Publicly Available (No Restrictions)
+'**SIDER (Side Effects Data)	SIDER Database'**	✅ Publicly Available (No Restrictions)
 
-User-Reported Health Data	Collected via user input	✅ No Restrictions
+'**MIMIC-III (Kaggle Version)	Kaggle'**	✅ Publicly Available (No Restrictions)
 
-⚠ Note: The MIMIC-III dataset was obtained from Kaggle instead of PhysioNet, meaning it does not require special access or approval.
+'**User-Reported Health Data	Collected via user input'**	✅ No Restrictions
+
 
 ### 📌 Project Workflow
-1️⃣ Extracting Drug Data from DailyMed
+1️⃣ '**Extracting Drug Data from DailyMed'**
 Script: XML_Extract.py
 Function: Extracts XML files from compressed DailyMed archives.
 Output: XML files saved in the extracted_xmls directory.
 
-2️⃣ Converting XML to JSON
+2️⃣ '**Converting XML to JSON'**
 Script: XML-Json.py
 Function: Converts SPL XML files into structured JSON format.
 Output: A JSON file containing drug interactions, warnings, and dosage information.
 
-3️⃣ Drug Interaction Analysis
+3️⃣ '**Drug Interaction Analysis'**
 Script: Drug-Interaction.py
 Function:
 Identifies drug-drug interactions based on active ingredients.
 Uses Facebook’s BART model to generate natural language summaries of risks.
 Flags potential adverse reactions based on predefined interaction rules.
 
-4️⃣ User-Specific Risk Assessment
+4️⃣ '**User-Specific Risk Assessment'**
 Script: Personalized-Risk.py
 Function:
 Accepts user input for pre-existing conditions (e.g., hypertension, diabetes).
@@ -76,11 +76,11 @@ Edit
 }
 
 ### 📌 Why JSON Instead of XML?
-✅ Efficiency → JSON files allow faster access and processing in ML pipelines.
+✅ '**Efficiency'**→ JSON files allow faster access and processing in ML pipelines.
 
-✅ Scalability → Structured JSON enables integration with external APIs.
+✅ '**Scalability'** → Structured JSON enables integration with external APIs.
 
-✅ Better NLP Processing → JSON simplifies text-based interaction summarization.
+✅ '**Better NLP Processing'** → JSON simplifies text-based interaction summarization.
 
 ### 📌 How to Use the System
 1️⃣ Run XML_Extract.py
