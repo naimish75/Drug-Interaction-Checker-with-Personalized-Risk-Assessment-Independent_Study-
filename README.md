@@ -1,4 +1,5 @@
-#Drug Interaction Checker with Personalized Risk Assessment
+# Drug Interaction Checker with Personalized Risk Assessment
+
 ###📌 Overview
 The Enhanced Drug Interaction Checker is an AI-powered tool designed to analyze drug interactions while integrating user-specific health conditions for personalized risk assessment. Unlike traditional drug interaction checkers that rely solely on static databases, our approach considers user-reported health conditions and real-world hospital data to provide more accurate and dynamic risk classification.
 
