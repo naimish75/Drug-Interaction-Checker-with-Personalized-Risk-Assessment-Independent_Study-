@@ -5,10 +5,15 @@ The Enhanced Drug Interaction Checker is an AI-powered tool designed to analyze 
 
 ### 🔹 Key Features
 ✅ Extracts drug data from DailyMed (SPL XML files).
+
 ✅ Converts XML files to JSON for structured analysis.
+
 ✅ Performs drug interaction analysis using advanced ML models.
+
 ✅ User-specific risk assessment based on self-reported conditions (e.g., hypertension, diabetes).
+
 ✅ Uses MIMIC-III dataset (from Kaggle) to refine interaction risk classification.
+
 ✅ Automated severity classification based on active ingredients and health factors.
 
 ### 📌 Data Sources & Accessibility
