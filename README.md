@@ -1,9 +1,9 @@
 # Drug Interaction Checker with Personalized Risk Assessment
 
-###📌 Overview
+### 📌 Overview
 The Enhanced Drug Interaction Checker is an AI-powered tool designed to analyze drug interactions while integrating user-specific health conditions for personalized risk assessment. Unlike traditional drug interaction checkers that rely solely on static databases, our approach considers user-reported health conditions and real-world hospital data to provide more accurate and dynamic risk classification.
 
-###🔹 Key Features
+### 🔹 Key Features
 ✅ Extracts drug data from DailyMed (SPL XML files).
 ✅ Converts XML files to JSON for structured analysis.
 ✅ Performs drug interaction analysis using advanced ML models.
@@ -11,7 +11,7 @@ The Enhanced Drug Interaction Checker is an AI-powered tool designed to analyze 
 ✅ Uses MIMIC-III dataset (from Kaggle) to refine interaction risk classification.
 ✅ Automated severity classification based on active ingredients and health factors.
 
-###📌 Data Sources & Accessibility
+### 📌 Data Sources & Accessibility
 We use multiple publicly available datasets for drug interaction analysis and risk assessment.
 
 Dataset	Source	Accessibility
@@ -21,7 +21,7 @@ MIMIC-III (Kaggle Version)	Kaggle	✅ Publicly Available (No Restrictions)
 User-Reported Health Data	Collected via user input	✅ No Restrictions
 ⚠ Note: The MIMIC-III dataset was obtained from Kaggle instead of PhysioNet, meaning it does not require special access or approval.
 
-###📌 Project Workflow
+### 📌 Project Workflow
 1️⃣ Extracting Drug Data from DailyMed
 Script: XML_Extract.py
 Function: Extracts XML files from compressed DailyMed archives.
@@ -61,12 +61,12 @@ Edit
   "risk_level": "High",
   "summary": "Ibuprofen may reduce the effectiveness of Lisinopril and increase the risk of kidney damage in patients with hypertension."
 }
-###📌 Why JSON Instead of XML?
+### 📌 Why JSON Instead of XML?
 ✅ Efficiency → JSON files allow faster access and processing in ML pipelines.
 ✅ Scalability → Structured JSON enables integration with external APIs.
 ✅ Better NLP Processing → JSON simplifies text-based interaction summarization.
 
-###📌 How to Use the System
+### 📌 How to Use the System
 1️⃣ Run XML_Extract.py
 Extracts XML files from DailyMed’s SPL archives.
 
@@ -83,5 +83,5 @@ Converts the extracted XML files into a structured JSON database.
 🚀 Outputs detailed interaction insights with personalized warnings.
 
 
-###📌 Final Thoughts
+### 📌 Final Thoughts
 By combining drug interaction databases, machine learning, and real-world hospital data, this project moves toward AI-driven precision medicine. The goal is to make medication safety checks smarter, personalized, and accessible to all users.
